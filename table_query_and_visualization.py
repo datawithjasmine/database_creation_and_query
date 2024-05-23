@@ -1,5 +1,16 @@
+# TABLE-QUERY PROGRAM by JASMINE MITCHELL
+
+#              --- COMMENTS ---
+
+# 1. I IMPORTED THE FOLLOWING LIBRARIES
+#    - Pandas: to turn the queries into a DataFrame.
+#    - SQLite3: to perform SQL queries and connect to the database file.
+
 import sqlite3
 import pandas as pd
+
+# 2. The TABLE_QUERY function is to create a table from the database
+#           file given so that the user can perform SQL queries
 
 
 def table_query(database, query):
@@ -8,11 +19,22 @@ def table_query(database, query):
     conn.close()
     return dataframe
 
+# 3. The EXPORT_EXCEL function allow users to export their queried data
+#     into an Excel file format so that they can perform data analysis
+
 
 def export_excel(queried_data, filename):
     # queried_data = pd.DataFrame(queried_data)
     queried_data.to_excel(filename, sheet_name="Sheet_1")
     print("Your query has been successfully exported as an Excel file.")
+
+# 4. The user will be prompted for the name of the database file and to create
+#       a SQL query. The result will be a DataFrame table that will only
+#       show the first 100 rows of the table. I did this due to many csv
+#                     files containing thousands of rows.
+#      The user can decide if they want to convert the query data into an
+#                   Excel file or create another query.
+#         The program ends when the user enter the exit commands.
 
 
 database_path = input("Enter the name of the database file (MUST INCLUDE '.db'): ")
@@ -64,12 +86,3 @@ while True:
         raise ValueError("Invalid response. Enter yes to continue or Q to quit!")
 
 print("-- END OF PROGRAM --")
-
-
-
-
-
-
-#
-
-
