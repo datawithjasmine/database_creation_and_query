@@ -2,10 +2,10 @@
 
 ## Table of Contents
 
-[Project Overview](#project-overview)\
-[Limitations](#limitations)\
-[Future Implementations](#future-implementations)\
-[Use Case](#use-case)
+- Project Overview 
+- Limitations 
+- Future Implementations 
+- Use Case 
 
 ### Project Overview
 
