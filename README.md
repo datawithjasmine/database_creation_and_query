@@ -5,11 +5,12 @@
 - Project Overview 
 - Limitations 
 - Future Implementations 
-- Use Case 
+- Use Case
+- Updates
 
 ### Project Overview
 
-This python script allows users to query data from a table, created from a database. You can query as much as you want and even export the queried data into an Excel file for further analysis and even visualization.
+This python program allows users to query data from a table, created from a database. You can query as much as you want and even export the queried data into an Excel file for further analysis and even visualization.
 
 ### Limitations
 
@@ -22,3 +23,5 @@ In addition to exporting as an Excel file, you can visualize the queried data in
 ### Use Case
 
 For extracting information, data analysis and visualization on a table containing lots of data.
+
+### Updates
